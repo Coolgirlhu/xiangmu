@@ -34,13 +34,14 @@ class Login {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             }).then(res => {
-                // console.log(res);
+                console.log(res);
                 // 判断登录状态,将用户信息进行保存
                 if (res.status == 200 && res.data.code == 1) {
                     // 将token和user保存到local
                     localStorage.setItem('token', res.data.token);
                     // localStorage.setItem('user_id', res.data.user.id);
                     localStorage.setItem('user_id', res.data.user.id);
+                    localStorage.setItem('nickname', res.data.user.nickname);
                     // 如果有回调的地址,则跳转回去
                     if (this.url) {
                         location.href = this.url;
@@ -61,3 +62,20 @@ class Login {
     }
 }
 new Login;
+
+function logout() {
+    // 弹出询问框确定要退出
+    layer.open({
+        title: '退出登录',
+        content: '您确定要退出吗?',
+        btn: ['退出', '再想想'],
+        time: 3000,
+        yes: function(index, layero) {
+            var str = `<span><a href="./login.html">登录</a>&nbsp;或&nbsp;<a href="./register.html">注册</a>
+                       ANTA会员</span>`
+            $('.login').html(str)
+            localStorage.removeItem('id')
+            localStorage.removeItem('token')
+        }
+    });
+}

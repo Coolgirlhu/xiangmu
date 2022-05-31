@@ -1,28 +1,28 @@
 // 表头用户信息显示 并退出登录
-window.onload = function() {
-    // 获取查看信息的用户id 和秘钥
-    let id = localStorage.getItem('user_id')
-    let token = localStorage.getItem('token')
-    console.log(id);
-    // 设置请求头  秘钥
-    const AUTH_TOKEN = localStorage.getItem('token')
-    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
-    // 发送服务器请求 查看用户信息
-    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
-        console.log(res);
-        console.log(res.data.code);
-        if (res.data.code == 1) {
-            // 获取id名字
-            let nickname = res.data.info.nickname;
-            console.log(nickname);
-            // 将名称追加到页面
-            let str = `欢迎用户:<b><span style="color:red;margin-right:30px" >${nickname}</span></b><span style="margin-right:30px" onclick="location.href='userinfo.html'">个人中心</span><span style="color:black" onclick="logout()">退出登录</span>`
-            $('.login').html(str)
-        }
-    })
+// window.onload = function() {
+//     // 获取查看信息的用户id 和秘钥
+//     let id = localStorage.getItem('user_id')
+//     let token = localStorage.getItem('token')
+//     console.log(id);
+//     // 设置请求头  秘钥
+//     const AUTH_TOKEN = localStorage.getItem('token')
+//     axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+//     axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+//     // 发送服务器请求 查看用户信息
+//     axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+//         console.log(res);
+//         console.log(res.data.code);
+//         if (res.data.code == 1) {
+//             // 获取id名字
+//             let nickname = res.data.info.nickname;
+//             console.log(nickname);
+//             // 将名称追加到页面
+//             let str = `欢迎用户:<b><span style="color:red;margin-right:30px" >${nickname}</span></b><span style="margin-right:30px"">个人中心</span><span style="color:black" onclick="logout()">退出登录</span>`
+//             $('.login').html(str)
+//         }
+//     })
 
-}
+// }
 
 function logout() {
     // 弹出询问框确定要退出
