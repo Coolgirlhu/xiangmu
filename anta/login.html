@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安踏官方商城登录页</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- <script src="./js/login.js"></script> -->
+    <link rel="stylesheet" href="./font/iconfont.css">
+
+    <link rel="shortcut icon" href="./antafavicon.ico" />
+</head>
+
+<body>
+    <!-- top顶部栏 -->
+    <div class="top clearfix">
+        <div class="enban"><a href="">EN</a></div>
+        <div class="kefu"><a href=""><span class="iconfont icon-10"></span></a></div>
+        <div class="car"><a href="./cart.html"><span class="iconfont icon-gouwucheman1"></span></a></div>
+
+        <div class="login"><span><a href="./login.html">登录</a>&nbsp;或&nbsp;<a href="./register.html">注册</a>
+                ANTA会员</span></div>
+
+
+    </div>
+
+    <!-- 导航栏 列表 -->
+    <div class="nov clear fix">
+        <div class="logo">
+            <a href="./first.html"><img src="./images/logo.png" alt=""></a>
+        </div>
+
+        <ul>
+            <li>冬奥国旗款</li>
+            <li class="li1">男子</li>
+            <li class="li1">女子</li>
+            <li class="li1">儿童</li>
+            <li class="li1">安踏儿童</li>
+            <li class="li1">品牌文化</li>
+            <li class="li1">观赏视频</li>
+            <li class="li1">联系我们</li>
+        </ul>
+        <div class="search">
+            <div class="enlarge"><a href=""><span class="iconfont icon-fangdajing"></span></a></div><input type="text" placeholder="搜索">
+        </div>
+    </div>
+    <!-- banner图 -->
+    <div class="banner clearfix">
+        <div class="zhuce">
+
+            <!-- 点击微信登录弹出的 二维码 -->
+            <div class="vxlogin" style="display: none;">
+                <h3 style="font-size: 20px;color: rgb(161, 156, 156);">微信登录</h3>
+                <div class="ssss"><img src="./images/vxlogintwo.png" alt=""></div>
+                <div class="vxlogintext">请使用微信扫码登录"安踏官方商城"</div>
+                <div class="cancel">取消登录</div>
+            </div>
+
+            <div class="zctop">
+                <div>账号密码登录</div>
+                <div style="color:#BBBBBB;border-color: #BBBBBB;">短信快捷登录</div>
+
+            </div>
+
+            <form class="form1" style="display: block;" action="">
+                <table>
+                    <tr>
+
+
+                        <td><input type="text" name="username" placeholder="输入用户名"></td>
+                    </tr>
+                    <tr>
+
+
+                        <td><input type="password" name="password" placeholder="输入密码"></td>
+                    </tr>
+
+
+                </table>
+                <input type="button" class="queren" value="立即登录a">
+
+            </form>
+            <!-- 短信登录 -->
+            <form class="form2" style="display: none;" action="">
+                <table>
+                    <tr>
+
+
+                        <td><input type="number" name="username" placeholder="手机号码"></td>
+                    </tr>
+                    <tr>
+
+
+                        <td><input type="text" style="width: 100px;" name="password" placeholder="输入短信验证码"> <button style="margin-left: 50px;">点击发送</button></td>
+                    </tr>
+
+
+                </table>
+                <input type="submit" class="queren" value="立即登录">
+
+            </form>
+
+            <div class="hengxiana" style="margin-top: 30px;"></div>
+            <div class="wenzi" style="margin-top: 22px;"><span>其他方式登录</span></div>
+            <div class="hengxianb" style="margin-top: 30px;"></div>
+
+
+            <!-- 微信图标 -->
+            <a class="aaa" href="javascript:;">
+                <div class="wximg" style="margin-top: 45px;">
+
+                </div>
+            </a>
+
+            <div class="forget"><span><a href="./register.html">账号注册</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><a
+                        href="">忘记密码</a></span></div>
+        </div>
+
+    </div>
+
+    <!-- bottom -->
+    <div class="bottom clearfix">
+
+        <div class="keepmove"> <img src="	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg" alt=""></div>
+        <div class="bottomr clearfix">
+            <div class="righttop">
+                <div class="rtl">
+                    <div style="margin-top: 19px;"><span>在线客服</span><span class="iconfont icon-10" style="font-size: 22px;"></span></div>
+                    <div style="margin-top: 23px;"><span>在线咨询</span> <span>400-858-2020</span></div>
+                </div>
+                <div class="rtr"> </div>
+            </div>
+            <div class="rightbottom">
+                <p>Copyright(C) 2012-2020 by www.ANTA.cn &nbsp;©安踏体育用品有限公司版权所有 &nbsp;营业执照 &nbsp;开户许可证
+                </p>
+                <!-- <br> -->
+
+                <p style="margin-top: 5px;"> 闽ICP备2021011550号-2 &nbsp;闽公网安备35020302033806号</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./js/axios.min.js"></script>
+<script src="./js/login.js">
+</script>
+
+
+</html>

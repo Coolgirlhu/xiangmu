@@ -1,0 +1,713 @@
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+td,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset,
+iframe {
+    border: 0;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+
+/* body{
+    width: 100%;
+} */
+
+.top {
+    width: 99.9%;
+    height: 50px;
+    border: 1px solid #DBDCDD;
+}
+
+.top>div {
+    float: right;
+    /* margin-right: 30px; */
+    line-height: 50px;
+    /* font: size 20px; */
+    font-size: 14px;
+    color: #A5A5A5;
+    font-weight: bold;
+}
+
+.kefu {
+    margin-right: 35px;
+}
+
+.login {
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.car {
+    margin-right: 35px;
+}
+
+.enban {
+    margin-right: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nov {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfixx::before {
+    content: '';
+    display: table;
+    /* clear: both; */
+}
+
+.logo {
+    width: 55px;
+    height: 30px;
+    float: left;
+    margin-left: 12.2%;
+    margin-top: 34px;
+}
+
+.logo img {
+    width: 55px;
+    height: 30px;
+    /* float: left; */
+}
+
+.nov li {
+    float: left;
+    line-height: 97px;
+    border-bottom: 3px solid white;
+}
+
+.nov li:hover {
+    border-bottom: 3px solid red;
+}
+
+
+/* ul{
+     width: ;
+ } */
+
+.nov ul {
+    /* width: 47.25%; */
+    width: 747.95px;
+    float: left;
+    margin-left: 234px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nov ul li {
+    /* padding-bottom: 5px; */
+    /* width:12.5%; */
+    font-size: 17px;
+    font-weight: 900;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.nov ul li:hover {
+    cursor: pointer;
+    /* padding-bottom: 10px; */
+    /* border-bottom: 10px solid red; */
+}
+
+.nov .search {
+    float: left;
+    width: 13.25%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid #A5A5A5;
+    margin-left: 2.5%;
+}
+
+.enlarge {
+    float: left;
+    /* margin-top: 13px;
+    margin-left: 13px; */
+    width: 21.23%;
+    height: 27px;
+    margin-top: 7px;
+    text-align: center;
+    line-height: 27px;
+    border-right: 1px solid black;
+}
+
+.search input {
+    float: left;
+    width: 66.04%;
+    margin-left: 6px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+/* 列表滑过 显示 下拉菜单 css */
+
+.caidan {
+    width: 100%;
+    height: 385px;
+    background-color: rgb(243, 234, 234);
+    overflow: hidden;
+    z-index: 111;
+    position: absolute;
+    border-top: 1px solid #DBDCDD;
+    /* top: 100px; */
+    display: none;
+}
+
+.caidanc {
+    width: 58%;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 35px;
+    display: flex;
+}
+
+.caidanc ul {
+    /* float: left; */
+    width: 180px;
+    height: 310px;
+    background-color: rgb(250, 249, 249);
+    border-right: 1px solid #DBDCDD;
+    /* margin-top: 35px; */
+}
+
+.caidanc ul li {
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.caidanc ul li:hover {
+    color: red;
+}
+
+.caidanc ul a:first-child {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.caidanc ul:nth-child(3) a:first-child li {
+    margin-top: 35px;
+}
+
+
+/* 中间的 左边部分  */
+
+
+/* 渲染数据吧 */
+
+
+/* .biaotou {
+    float: right;
+    width: 1000px;
+    height: 130px;
+    font-size: 35px;
+    font-weight: bold;
+    /* border-bottom: 1px solid gray; */
+
+
+/* margin-top: 30px; */
+
+
+/* overflow: hidden;
+}  */
+
+.sk_bd {
+    width: 1200px;
+    margin-top: 25px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+/* .sk_bd ul {
+    width: 300px;
+} */
+
+.sk_goods {
+    color: #666;
+    width: 288px;
+    height: 410px;
+    border: 1px solid transparent;
+    /* transparent透明色 */
+    position: relative;
+    float: left;
+    margin: 0 10px 15px 0;
+}
+
+.sk_goods:hover {
+    border: 1px solid #e01222;
+}
+
+.sk_goods img {
+    display: block;
+    margin: 0px auto;
+    height: 242px;
+}
+
+.sk_goods_title {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 10px 15px;
+}
+
+.sk_goods_price {
+    padding: 0 10px;
+}
+
+.sk_goods_price em {
+    color: #e01222;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sk_goods_price del {
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.sk_goods_progress {
+    font-size: 12px;
+    padding: 10px 10px 0;
+}
+
+.bar {
+    display: inline-block;
+    /* 转化为行内块元素 */
+    width: 130px;
+    height: 10px;
+    border: 1px solid #b1191a;
+    vertical-align: middle;
+    /* 居中对齐 */
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.bar_in {
+    height: 10px;
+    background-color: #e01222;
+    width: 87%;
+}
+
+.sk_goods_progress i,
+em {
+    color: #e01222;
+    font-style: normal;
+}
+
+.sk_goods_buy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #e01222;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.sk_goods_buy:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.sk_page {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sk_page {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.page_num a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+}
+
+.page_num .pn-prev,
+.page_num .pn-next {
+    width: 83px;
+}
+
+.page_num .dotted,
+.page_num .current {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.page_skip {
+    font-size: 14px;
+    color: #333;
+}
+
+.page_skip input {
+    width: 46px;
+    height: 36px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.page_skip button {
+    width: 54px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.page_skip button:hover {
+    border: 1px solid #f8061a;
+    background-color: #e01222;
+    color: #fff;
+}
+
+
+/* dibucss部分 */
+
+.bottom {
+    width: 100%;
+    height: 266px;
+    background-color: #000000;
+}
+
+.bottom>div {
+    float: left;
+}
+
+.keepmove {
+    /* width: 566px; */
+    height: 266px;
+    /* background-image: url(	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg); */
+}
+
+.keepmove img {
+    width: 250px;
+    height: 96px;
+    margin-left: 186px;
+    margin-top: 87px;
+}
+
+.bottomr {
+    width: 663px;
+    height: 266px;
+}
+
+.righttop {
+    width: 663px;
+    height: 106px;
+    margin-top: 47px;
+}
+
+.righttop>div {
+    float: left;
+}
+
+.rtl {
+    width: 424px;
+    height: 106px;
+    border-right: 1px solid rgb(236, 225, 225);
+    color: white;
+    font-size: 22px;
+}
+
+.rtl>div span:last-child {
+    margin-left: 20px;
+}
+
+.rtl>div {
+    margin-left: 60px;
+}
+
+.rtr {
+    width: 93px;
+    height: 88px;
+    background-image: url(https://img.fishfay.com/theme/images/antacn/qr-code.jpg);
+    background-repeat: no-repeat;
+    background-size: 93px 88px;
+    margin-left: 90px;
+    margin-top: 7px;
+}
+
+.rightbottom {
+    margin-top: 40px;
+    width: 663px;
+    /* height:160px ; */
+    color: white;
+    font-size: 14px;
+}
+
+.fixed {
+    width: 60px;
+    height: 280px;
+    border-radius: 30px;
+    background-color: rgba(240, 243, 243, 0.5);
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    z-index: 222;
+}
+
+.fixed:hover {
+    cursor: pointer;
+}
+
+.fixed .p2 {
+    color: #A19F9F;
+}
+
+.fixed p {
+    text-align: center;
+    /* font-size: 30px; */
+}
+
+.smallheng {
+    width: 33px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.dropBtncart {
+    background-color: white;
+    margin-left: -25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* .dropBtncart:hover .dropContentcart{
+    display: block;
+} */
+
+.dropDowncart {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    z-index: 120;
+}
+
+.dropDowncart:hover .dropContentcart {
+    display: block;
+}
+
+.dropContentcart {
+    /* float: left; */
+    width: 460px;
+    height: 230px;
+    overflow: auto;
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 8px 0 8px 8px;
+    right: 0;
+}
+
+.dropDowncart:hover .dropBtncart {
+    background-color: white;
+}
+
+.dropContentcart a {
+    padding: 8px 10px;
+    color: #a4a4a4;
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 100px;
+    margin-right: 50px;
+}
+
+
+/* .dropContentcart a:hover {
+    color: red;
+} */
+
+.dropDowncart:hover .dropContentcart {
+    display: block;
+}
+
+.dropContentcart .carthome {
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+}
+
+.dropContentcart .myicon {
+    font-size: 66px;
+    font-weight: lighter;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.dropContentcart .list {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropContentcart .list img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.dropContentcart .txt {
+    width: 250px;
+    float: left;
+}
+
+.dropContentcart .num {
+    width: 100px;
+    float: right;
+}
+
+.dropContentcart .cartword {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 124px;
+    top: 145px;
+}
+
+.dropContentcart .cartword p {
+    color: #a4a4a4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ano {
+    text-align: center;
+}
+
+.dropDowncart .jiesuan {
+    position: relative;
+    bottom: 0;
+    float: left;
+    margin-top: 50px;
+    display: none;
+}
+
+.dropDowncart .jiesuan img {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 32px;
+    margin-left: 50px;
+}
+
+.dropDowncart .jiesuan a {
+    font-size: 20px;
+    background-color: rgb(237, 125, 125);
+    line-height: 30px;
+    width: 230px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.dropDowncart .jixugouwu {
+    position: relative;
+    bottom: 0;
+    float: left;
+    width: 230px;
+    margin-top: 50px;
+    display: none;
+}
+
+.dropDowncart .jixugouwu img {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.dropDowncart .jixugouwu a {
+    font-size: 20px;
+    background-color: rgb(235, 201, 201);
+    line-height: 30px;
+    width: 230px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}

@@ -1,0 +1,777 @@
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+td,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset,
+iframe {
+    border: 0;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+
+/* body{
+    width: 100%;
+} */
+
+.top {
+    width: 99.9%;
+    height: 50px;
+    border: 1px solid #DBDCDD;
+}
+
+.top>div {
+    float: right;
+    /* margin-right: 30px; */
+    line-height: 50px;
+    /* font: size 20px; */
+    font-size: 14px;
+    color: #A5A5A5;
+    font-weight: bold;
+}
+
+.kefu {
+    margin-right: 35px;
+}
+
+.login {
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.car {
+    margin-right: 35px;
+}
+
+.enban {
+    margin-right: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nov {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfixx::before {
+    content: '';
+    display: table;
+    /* clear: both; */
+}
+
+.logo {
+    width: 55px;
+    height: 30px;
+    float: left;
+    margin-left: 12.2%;
+    margin-top: 34px;
+}
+
+.logo img {
+    width: 55px;
+    height: 30px;
+    /* float: left; */
+}
+
+.nov li {
+    float: left;
+    line-height: 97px;
+    border-bottom: 3px solid white;
+}
+
+.nov li:hover {
+    border-bottom: 3px solid red;
+}
+
+
+/* ul{
+     width: ;
+ } */
+
+.nov ul {
+    /* width: 47.25%; */
+    width: 747.95px;
+    float: left;
+    margin-left: 234px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nov ul li {
+    /* padding-bottom: 5px; */
+    /* width:12.5%; */
+    font-size: 17px;
+    font-weight: 900;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.nov ul li:hover {
+    cursor: pointer;
+    /* padding-bottom: 10px; */
+    /* border-bottom: 10px solid red; */
+}
+
+.nov .search {
+    float: left;
+    width: 13.25%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid #A5A5A5;
+    margin-left: 2.5%;
+}
+
+.enlarge {
+    float: left;
+    /* margin-top: 13px;
+    margin-left: 13px; */
+    width: 21.23%;
+    height: 27px;
+    margin-top: 7px;
+    text-align: center;
+    line-height: 27px;
+    border-right: 1px solid black;
+}
+
+.search input {
+    float: left;
+    width: 66.04%;
+    margin-left: 6px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+/* 列表滑过 显示 下拉菜单 css */
+
+.caidan {
+    width: 100%;
+    height: 385px;
+    background-color: rgb(243, 234, 234);
+    overflow: hidden;
+    z-index: 111;
+    position: absolute;
+    border-top: 1px solid #DBDCDD;
+    /* top: 100px; */
+    display: none;
+}
+
+.caidanc {
+    width: 58%;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 35px;
+    display: flex;
+}
+
+.caidanc ul {
+    /* float: left; */
+    width: 180px;
+    height: 310px;
+    background-color: rgb(250, 249, 249);
+    border-right: 1px solid #DBDCDD;
+    /* margin-top: 35px; */
+}
+
+.caidanc ul li {
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.caidanc ul li:hover {
+    color: red;
+}
+
+.caidanc ul a:first-child {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.caidanc ul:nth-child(3) a:first-child li {
+    margin-top: 35px;
+}
+
+
+/* 轮播图 */
+
+.carousel {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 560px;
+}
+
+.carousel ul li {
+    width: 100%;
+    /* width: 1580px; */
+    height: 560px;
+    position: absolute;
+    transition: opacity 1.5s;
+}
+
+.carousel ul li.ac {
+    z-index: 5;
+    opacity: 1;
+}
+
+.carousel ol {
+    position: absolute;
+    right: 10%;
+    bottom: 10px;
+    z-index: 6;
+    bottom: 20px;
+    left: 50%;
+}
+
+.carousel ol li {
+    width: 20px;
+    height: 20px;
+    background: rgb(249, 245, 245);
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 7px;
+    color: rgb(74, 59, 88);
+}
+
+.carousel ol li.ac {
+    background: rgb(247, 218, 218);
+    color: rgb(10, 9, 9);
+}
+
+.leftbtn,
+.rightbtn {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(30, 23, 14);
+    background-color: rgb(184, 187, 184, 0.5);
+    top: 50%;
+    width: 80px;
+    height: 120px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    z-index: 5;
+}
+
+.leftbtn {
+    left: 0px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+}
+
+.rightbtn {
+    right: 0;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+}
+
+
+/* model banner */
+
+.modelpart {
+    width: 100%;
+}
+
+.modelpart img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/* 固定定位 回到顶部 的 css */
+
+.fixed {
+    width: 60px;
+    height: 280px;
+    border-radius: 30px;
+    background-color: rgba(240, 243, 243, 0.5);
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    z-index: 222;
+}
+
+.fixed:hover {
+    cursor: pointer;
+}
+
+.fixed .p2 {
+    color: #A19F9F;
+}
+
+.fixed p {
+    text-align: center;
+    /* font-size: 30px; */
+}
+
+.smallheng {
+    width: 33px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+
+/* 回到顶部 结束 */
+
+.dongao {
+    width: 100%;
+}
+
+.dongao img {
+    /* width: 1580px; */
+    width: 100%;
+    height: auto;
+}
+
+.fourpeople {
+    height: 726px;
+    width: 100%;
+    background-image: url(https://anta-cn-web.obs.myhwclouds.com/anta-cn-web/descente/2021/03/11/e510b60d5c447e1d1c5ca21f90463ca6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 726px;
+    /* overflow: hidden; */
+    /* border: 1px solid black; */
+}
+
+.fourc {
+    width: 75.95%;
+    height: 580px;
+    display: flex;
+    /* margin: 20px auto; */
+    margin: 50px auto;
+}
+
+.fourc>div {
+    position: relative;
+    overflow: hidden;
+}
+
+.fourc>div>div {
+    position: absolute;
+    bottom: -50px;
+    display: none;
+}
+
+.fourc>div>div:hover {
+    cursor: pointer;
+}
+
+.fourc>div>div img {
+    width: 100%;
+}
+
+.fourc>div>img:hover {
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+.hupu {
+    width: 100%;
+}
+
+.hupu img {
+    width: 100%;
+    height: auto;
+}
+
+.hupu>img,
+.badao>img:hover {
+    cursor: pointer;
+}
+
+.badao {
+    width: 100%;
+}
+
+.badao img {
+    width: 100%;
+}
+
+.modelxie {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /* height: ; */
+    background-image: url(https://anta-cn-web.obs.myhwclouds.com/anta-cn-web/descente/2021/07/01/e29d0524e27b4115892ffb16bf2ccff2.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: -150px;
+    overflow: hidden;
+}
+
+.modelxie1 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 206px;
+    top: 577px;
+}
+
+.modelxie2 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 604px;
+    top: 577px;
+}
+
+.modelxie3 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 1022px;
+    top: 577px;
+}
+
+.modelxietwo {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /* height: ; */
+    background-image: url(https://anta-cn-web.obs.myhwclouds.com/anta-cn-web/descente/2021/03/11/b506d7e874898ddbe03ab1e7ac59b468.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: -150px;
+    overflow: hidden;
+}
+
+.modelxie4 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 206px;
+    top: 537px;
+}
+
+.modelxie5 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 604px;
+    top: 537px;
+}
+
+.modelxie6 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 1022px;
+    top: 537px;
+}
+
+.gusslike div {
+    width: 110px;
+    height: 40px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    margin: 30px auto;
+}
+
+.guanzhu {
+    width: 100%;
+    height: 280px;
+    background-color: #DD0000;
+    margin-top: 100px;
+}
+
+.guanzhu::before {
+    content: '';
+    display: table;
+}
+
+.guanzhu h3,
+.guanzhu p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.guanzhu h3 {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    margin-top: 50px;
+}
+
+.guanzhu p {
+    font-size: 20px;
+    /* font-weight: 900; */
+    color: white;
+}
+
+.vxwbimgs {
+    width: 200px;
+    /* height: 200px; */
+    height: 80px;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 24px;
+}
+
+.vxwbimgs a {
+    position: absolute;
+}
+
+.vxwbimgs a:nth-child(2) {
+    left: 100px;
+}
+
+.erweima {
+    width: 180px;
+    height: 190px;
+    position: absolute;
+    top: -186px;
+    left: -64px;
+    display: none;
+}
+
+.erweima:hover {
+    cursor: pointer;
+}
+
+.erweima img {
+    width: 100%;
+    height: 175px;
+}
+
+.sanjiao {
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid white;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin: 0px auto;
+}
+
+
+/* 底部css部分 */
+
+.bottom {
+    width: 100%;
+    height: 266px;
+    background-color: #000000;
+}
+
+.bottom>div {
+    float: left;
+}
+
+.keepmove {
+    width: 566px;
+    height: 266px;
+    /* background-image: url(	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg); */
+}
+
+.keepmove img {
+    width: 250px;
+    height: 96px;
+    margin-left: 186px;
+    margin-top: 87px;
+}
+
+.bottomr {
+    width: 663px;
+    height: 266px;
+}
+
+.righttop {
+    width: 663px;
+    height: 106px;
+    margin-top: 47px;
+}
+
+.righttop>div {
+    float: left;
+}
+
+.rtl {
+    width: 424px;
+    height: 106px;
+    border-right: 1px solid rgb(236, 225, 225);
+    color: white;
+    font-size: 22px;
+}
+
+.rtl>div span:last-child {
+    margin-left: 20px;
+}
+
+.rtl>div {
+    margin-left: 60px;
+}
+
+.rtr {
+    width: 93px;
+    height: 88px;
+    background-image: url(https://img.fishfay.com/theme/images/antacn/qr-code.jpg);
+    background-repeat: no-repeat;
+    background-size: 93px 88px;
+    margin-left: 90px;
+    margin-top: 7px;
+}
+
+.rightbottom {
+    margin-top: 40px;
+    width: 663px;
+    /* height:160px ; */
+    color: white;
+    font-size: 14px;
+}
+
+.dropBtncart {
+    background-color: white;
+    margin-left: -25px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropDowncart {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    z-index: 120;
+}
+
+.dropContentcart {
+    width: 460px;
+    height: 230px;
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 8px 0 8px 8px;
+    right: 0;
+}
+
+.dropDowncart:hover .dropBtncart {
+    background-color: white;
+}
+
+.dropContentcart a {
+    padding: 8px 10px;
+    color: #a4a4a4;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* .dropContentcart a:hover {
+    color: red;
+} */
+
+.dropDowncart:hover .dropContentcart {
+    display: block;
+}
+
+.dropContentcart .carthome {
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+}
+
+.dropContentcart .myicon {
+    font-size: 66px;
+    font-weight: lighter;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.dropContentcart .cartword {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 124px;
+    top: 145px;
+}
+
+.dropContentcart .cartword p {
+    color: #a4a4a4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ano {
+    text-align: center;
+}

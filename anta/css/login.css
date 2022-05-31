@@ -1,0 +1,346 @@
+
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,td,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset,iframe{border:0; }
+img{display:block; border:none;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{font-size:12px; font-family:"微软雅黑";}
+input,a{outline:none;}
+
+ .top{
+     width: 99.9%;
+     height: 50px;
+     border: 1px solid #DBDCDD;
+ }
+ .top>div{
+float: right;
+/* margin-right: 30px; */
+line-height: 50px;
+/* font: size 20px; */
+font-size: 14px;
+color: #A5A5A5;
+font-weight: bold;
+
+ }
+.kefu{
+    margin-right: 35px;
+}
+.login{
+    margin-right: 35px;
+}
+.car{
+    margin-right: 35px;
+}
+ .enban{
+     margin-right: 70px;
+ }
+
+ a{
+     text-decoration: none;
+
+ }
+ .nov{
+     width: 100%;
+     height: 100px;
+
+ }
+ .clearfix::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .logo{
+width: 55px;
+height: 30px;
+float: left;
+margin-left: 12.2%;
+margin-top: 34px;
+ }
+ .logo img {
+    width: 55px;
+    height: 30px;
+     /* float: left; */
+    
+
+ }
+ .nov li{
+     float: left;
+     line-height: 100px;
+
+ }
+ ul:hover{
+     cursor: pointer;
+ }
+ /* ul{
+     width: ;
+ } */
+ ul li{
+     font-size: 17px;
+     font-weight: 900;
+ }
+ 
+ ul li:first-child{
+margin-left: 236px;
+ }
+ .li1{
+     margin-left: 42px;
+ }
+.nov .search{
+    float: left;
+    width: 212px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid #A5A5A5;
+    margin-left: 40px;
+}
+
+.enlarge{
+
+    float: left;
+    /* margin-top: 13px;
+    margin-left: 13px; */
+    width: 45px;
+    height: 27px;
+    margin-top:7px ;
+    text-align: center;
+    line-height: 27px;
+border-right: 1px solid black;
+}
+
+.search input{
+    float: left;
+    width: 140px;
+    margin-left: 6px;
+    margin-top:10px ;
+    border: none;
+}
+
+
+
+
+
+
+
+/* 以上是一样的部分css ssssssssssssssssssssssssssssssssssssssssssssssssss*/
+/* .banner:before{
+    content: '';
+    display: table;
+} */
+.banner{
+    width: 100%;
+    /* min-height: 100%; */
+    height: 600px;
+    background: url(https://img.fishfay.com/theme/images/antacn/login/login-01.jpg) no-repeat;background-size: 100% 920px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.zhuce{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+   
+    
+}
+.vxlogin{
+    /* position: absolute; */
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    /* left: -235px;
+    top:-393px; */
+    text-align: center;
+
+    /* z-index: 1111;
+     */
+}
+.vxlogin:hover{
+    cursor: pointer;
+}
+.ssss{
+    width: 275px;
+    height: 273px;
+    margin:20px auto;
+}
+.vxlogintext{
+    color: white;
+    width: 306px;
+    height: 70px;
+    background-color:#2C2B2B;
+    border-radius: 35px;
+    line-height: 70px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.cancel{
+    width: 55px;
+    height: 20px;
+    background-color:#2C2B2B ;
+    color: white;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+.zctop{
+    /* position: 6absolute; */
+    display: flex;
+    width: 360px;
+    height: 33px;
+    /* background-color: black; */
+    margin-top: 93px;
+    margin-left: 61px;
+    
+    text-align: center;
+    line-height: 33px;
+    /* color: white; */
+    font-size: 16px;
+    font-weight: bold;
+}
+.zctop div:first-child{
+    border-bottom: 2px solid black;
+}
+.zctop div:nth-child(2){
+    border-bottom: 2px solid #BBBBBB;
+}
+.zctop div{
+width:50% ;
+height: 33px;
+color: black;
+}
+.zctop:hover{
+    cursor: pointer;
+}
+.zhuce table tr td:first-child{
+    text-align: left;
+}
+.zhuce table{
+    margin: 20px auto 20px 60px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+td>input{
+    width: 342px;
+    height: 36px;
+    border: 1px solid #B2B2B2;
+    /* border-radius: 5px; */
+    padding-left: 15px;
+    margin-top: 15px;
+}
+table{
+    /* color: ; */
+    color: #666666;
+
+}
+form{
+    height: 200px;
+}
+.queren{
+    width: 360px;
+    height: 45px;
+background-color: black;
+margin-left: 60px;
+/* margin-top: 20px; */
+text-align: center;
+line-height: 45px;
+/* color: white; */
+color: white;
+font-size: 20px;
+font-weight: bold;
+position: absolute;
+}
+.hengxiana,.hengxianb{
+    float: left;
+    width:138px ;
+    height: 1px;
+    background-color: black;
+}
+.hengxiana{
+    margin-left: 68px;
+}
+.wenzi{
+    float: left;
+margin-top: -7px;
+}
+.wximg{
+    width: 30px;
+    height: 30px;
+    background-image: url(	https://img.fishfay.com/theme/images/icons/wechat-cr-g.svg);
+    background-repeat: no-repeat;
+    margin: 30px auto;
+    position: relative;
+}
+.wximg:hover{
+    cursor: pointer;
+}
+.forget{
+    width: 140px;
+    margin-left: 190px;
+}
+/* 底部css重复部分 cssssssssssssssssssssssssssssssssssssssssssssssssssssss */
+.bottom{
+    width: 100%;
+    height: 266px;
+    background-color: #292929;
+}
+
+.bottom>div{
+    float: left;
+}
+.keepmove{
+width: 566px;
+height: 266px;
+/* background-image: url(	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg); */
+}
+.keepmove img{
+    width: 250px;
+    height: 96px;
+    margin-left: 186px;
+    margin-top: 87px;
+}
+.bottomr{
+    width: 663px;
+    height: 266px;
+
+}
+.righttop{
+    width: 663px;
+    height: 106px;
+    margin-top: 47px;
+}
+.righttop>div{
+    float: left;
+}
+.rtl{
+    width: 424px;
+    height: 106px;
+    border-right: 1px solid rgb(236, 225, 225);
+    color: white;
+    font-size: 22px;
+}
+.rtl>div span:last-child{
+    margin-left: 20px;
+}
+.rtl>div{
+    margin-left: 60px;
+}
+.rtr{
+    width: 93px;
+    height: 88px;
+
+    background-image: url(	https://img.fishfay.com/theme/images/antacn/qr-code.jpg);
+    background-repeat: no-repeat;
+    background-size: 93px 88px;
+    margin-left: 90px;
+    margin-top: 7px;
+}
+.rightbottom{
+    margin-top: 40px;
+    width: 663px;
+    /* height:160px ; */
+color: white;
+font-size: 14px;
+}

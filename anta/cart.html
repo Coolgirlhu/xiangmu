@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安踏商城购物车</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="shortcut icon" href="./antafavicon.ico" />
+</head>
+
+<body>
+    <div class="top clearfix">
+
+        <div class="enban"><a href="">EN</a></div>
+        <div class="kefu"><a href=""><span class="iconfont icon-10"></span></a></div>
+        <!-- <div class="car"><a href="./cart.html"><span class="iconfont icon-gouwucheman1"></span></a></div> -->
+
+        <div class="login"><span><a href="./login.html">登录</a>&nbsp;或&nbsp;<a href="./register.html">注册</a>
+                ANTA会员</span></div>
+        <div class="dropDowncart">
+            <button class="dropBtncart">
+                                        <a href="./cart.html"><span class="iconfont icon-gouwucheman1"></span></a>
+                                    </button>
+            <div class="dropContentcart">
+                <div class="carthome">
+                    <i class="iconfont icon-cart myicon"></i>
+                </div>
+                <div class="cartword">
+                    <p>您的购物车是空的，赶紧选购吧~</p>
+                </div>
+                <ul class="list">
+                    <!-- <li>
+                            <a href="" class="pic"><img src="${data.info.img_big_logo}"></a>
+                            <div class="txt">${data.info.title}</div>
+                            <div class="num"></div>
+                                <h4>¥${data.info.title}</h4>
+                            </div>
+                        </li>  -->
+                </ul>
+                <div class="jixugouwu">
+                    <a href="./list.html">
+                        <img src="images/购物2.png" alt="">
+                        <p>继续购物</p>
+                    </a>
+                </div>
+                <div class="jiesuan">
+                    <a href="./cart.html">
+                        <img src="images/asp结算.png" alt="">
+                        <p>去结算</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- 导航栏 列表 -->
+    <div class="nov clearfix">
+        <div class="logo">
+            <a href="./first.html"><img src="./images/logo.png" alt=""></a>
+        </div>
+
+        <ul class="clearfix ">
+            <li>冬奥国旗款</li>
+            <li class="li1">男子</li>
+            <li class="li1">女子</li>
+            <li class="li1">儿童</li>
+            <li class="li1">安踏儿童</li>
+            <li class="li1">品牌文化</li>
+            <li class="li1">观赏视频</li>
+            <li class="li1">联系我们</li>
+        </ul>
+
+
+        <div class="search">
+            <div class="enlarge"><a href=""><span class="iconfont icon-fangdajing"></span></a></div><input type="text" placeholder="搜索">
+        </div>
+    </div>
+    <!-- 列表滑过显示 列表页 -->
+    <div class="caidan">
+        <div class="caidanc">
+            <ul>
+
+            </ul>
+            <ul>
+
+
+            </ul>
+            <ul>
+
+            </ul>
+            <ul></ul>
+            <ul></ul>
+        </div>
+    </div>
+    <!-- buycar  -->
+
+    <!-- <div class="buycarback">
+        <div class="buycarleft">
+            <ul>
+                <li>个人中心</li>
+                <li>首页</li>
+                <li>我的订单</li>
+                <li>我的收藏</li>
+                <li>我的优惠券</li>
+                <li>我的售后单</li>
+                <li>账户管理</li>
+                <li>我的资料</li>
+                <li>收货地址管理</li>
+            </ul>
+        </div>
+        <div class="buycarright">
+            <div class="righthead">我的购物车
+                <div style="float: right;">默认显示近一个月内的订单</div>
+            </div>
+
+        </div>
+
+        <div class="buycartable">
+            <div class="emptycar">
+                <img src="./images/empty.png" alt="">
+            </div>
+
+
+            <div class="goodscar">
+                <table class="carttable">
+                    <thead>
+                        <tr style="border: 1px solid black;">
+                            <th><input type="checkbox" checked name="selectAll">全选</th>
+                            <th class="">商品图片</th>
+                            <th class="">商品名称</th>
+                            <th class="">商品单价</th>
+                            <th class="">商品数量</th>
+                            <th class="">价格小计</th>
+                            <th class="">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr style="border: 1px solid black;">
+                            <th><input type="checkbox" checked name="selectAll">全选</th>
+                            <th class="clear">清空购物车</th>
+                            <th style="color: red;">
+                                <a style="color: red;" href="./list.html">继续挑选商品</a></th>
+                            <th>总数量:<span class="totalNum">0</span></th>
+                            <th>总价:<span class="totalPrice">0</span></th>
+                            <th colspan="2" style="background-color: orange;border: 1px solid black;">立即结算</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- 底部和购物车中间的部分 -->
+
+    <div class="py-container">
+        <div class="w">
+            <div class="allgoods">
+                <h4>全部商品
+                    <!-- <span>11</span> -->
+                </h4>
+                <div class="cart-main">
+                    <div class="cart-th clearfix">
+                        <div>
+                            <input type="checkbox">全选</div>
+                        <div class="">商品</div>
+                        <div class="">单价（元）</div>
+                        <div class="">数量</div>
+                        <div class="">小计（元）</div>
+                        <div class="">操作</div>
+                    </div>
+                    <div class="cart-title clearfix">
+                        <h5 class="fl">安踏旗舰店</h5>
+                        <div class="yunfei fr"> 运费：￥6.00<span>还差￥99.00免运费</span>
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="cart-body">
+                            <div class="cart-list">
+
+
+                                <!-- <ul class="goods-list yui3-g">
+                                    <li class="yui3-u-3-8 pr">
+                                        <input type="checkbox" class="good-checkbox">
+                                        <div class="good-item">
+                                            <div class="item-img">
+                                                <img src="uploads/mobile.png">
+                                            </div>
+                                            <div class="item-msg">Apple Macbook Air 13.3英寸笔记本电脑 银色（Corei5）处理器/8GB内存</div>
+                                        </div>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <span>颜色: 银色</span>
+                                        <br>
+                                        <span>处理器: Core I5</span>
+                                        <br>
+                                        <span>内存: 8GB</span>
+                                        <br>
+                                        <span>尺寸: 13.3英寸</span>
+                                        <br>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <span class="price">8848.00</span>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <div class="clearfix">
+                                            <a href="javascript:;" class="increment mins">-</a>
+                                            <input autocomplete="off" type="text" value="1" minnum="1" class="itxt">
+                                            <a href="javascript:;" class="increment plus">+</a>
+                                        </div>
+                                        <div class="youhuo">有货</div>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <span class="sum">8848.00</span>
+                                    </li>
+                                    <li class="yui3-u-1-8">
+                                        <div class="del1">
+                                            <a href="javascript:;">删除</a>
+                                        </div>
+                                        <div>移到我的关注</div>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-tool clearfix">
+                    <div class="money-box">
+                        <div class="sumprice">
+                            <div class="sumprice-top">
+                                <span>
+                                    已选择
+                                    <strong>0</strong> 件商品</span>
+                                <span>
+                                    <em>总价（不含运费）：</em>
+                                    <i class="summoney">￥
+                                        <span>0</span>
+                                </i>
+                                </span>
+                            </div>
+                            <div class="sumprice-bottom">
+                                已节省：￥20.00
+                            </div>
+                        </div>
+                        <div class="sumbtn">
+                            <a class="sum-btn" href="#none">结算</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div class="bottom clearfix">
+
+        <div class="keepmove"> <img src="	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg" alt=""></div>
+        <div class="bottomr clearfix">
+            <div class="righttop">
+                <div class="rtl">
+                    <div style="margin-top: 19px;"><span>在线客服</span><span class="iconfont icon-10" style="font-size: 22px;"></span></div>
+                    <div style="margin-top: 23px;"><span>在线咨询</span> <span>400-858-2020</span></div>
+                </div>
+                <div class="rtr"> </div>
+            </div>
+            <div class="rightbottom">
+                <p>Copyright(C) 2012-2020 by www.ANTA.cn &nbsp;©安踏体育用品有限公司版权所有 &nbsp;营业执照 &nbsp;开户许可证
+                </p>
+                <!-- <br> -->
+
+                <p style="margin-top: 5px;"> 闽ICP备2021011550号-2 &nbsp;闽公网安备35020302033806号</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="./js/jquery-3.6.0-min.js"></script>
+<script src="./layer/layer.js"></script>
+<script src="./js/axios.min.js"></script>
+<script src="./js/cart.js"></script>
+
+</html>
