@@ -121,69 +121,58 @@ caidanc.children[4].innerHTML = str5
 // 
 // 点击 选择鞋码 弹出 选择框
 // 获取节点
-// $('.chancechima,.chimasanjiao').click(function() {
+$('.chancechima,.chimasanjiao').click(function() {
 
-//     $('.chancesize').show()
+    $('.chancesize').show()
 
-// })
-// $('.chancesize div:nth-child(2)').click(function() {
-//     $('.chancesize').hide()
-// })
+})
+$('.chancesize div:nth-child(2)').click(function() {
+    $('.chancesize').hide()
+})
 
-// // 鞋码列表 滑过变色 点击之后 列表消失 并且 数字到下面 
+// 鞋码列表 滑过变色 点击之后 列表消失 并且 数字到下面 
 
-// $('.chancesize ul li').hover(function() {
-//     $(this).css('background-color', 'pink').siblings().css('background-color', 'white')
-// }, function() {
-//     $('.chancesize ul li').css('background-color', 'white')
-// })
-// $('.chancesize ul li').click(function() {
-//     $(this).css({
-//         'background-color': 'black',
-//         'color': 'black'
-//     }).siblings().css({
-//         'background-color': 'white',
-//         'color': 'black'
-//     })
-//     $('.chancesize').hide()
-//     a = $(this).text()
-//     $('.chancechima').text(a)
+$('.chancesize ul li').hover(function() {
+    $(this).css('background-color', 'pink').siblings().css('background-color', 'white')
+}, function() {
+    $('.chancesize ul li').css('background-color', 'white')
+})
+$('.chancesize ul li').click(function() {
+    $(this).css({
+        'background-color': 'black',
+        'color': 'black'
+    }).siblings().css({
+        'background-color': 'white',
+        'color': 'black'
+    })
+    $('.chancesize').hide()
+    a = $(this).text()
+    $('.chancechima').text(a)
 
-// })
+})
 
-// // 数量 和三角 滑过以及点击 以及出现的列表的滑过以点击事件 和鞋码一样
-// $('.chancenum,.shuliangsanjiao').click(function() {
-//  $('.shuliangchance').show()
+// 数量 和三角 滑过以及点击 以及出现的列表的滑过以点击事件 和鞋码一样
+$('.chancenum,.shuliangsanjiao').click(function() {
+    $('.shuliangchance').show()
 
-// })
-// $('.shuliangchance ul li').hover(function() {
-//     $(this).css('background-color', 'pink').siblings().css('background-color', 'white')
-// }, function() {
-//     $('.chancesize ul li').css('background-color', 'white')
-// })
-// $('.shuliangchance ul li').click(function() {
-//     //     $(this).css({
-//     //         'background-color':'black',
-//     //         'color':'white'
-//     //     }).siblings().css({'background-color':'white',
-//     // 'color':'black'
-//     // })
-//     $('.shuliangchance').hide()
-//     b = $(this).text() - 0
-//     $('.chancenum').text(b)
+})
+$('.shuliangchance ul li').hover(function() {
+    $(this).css('background-color', 'pink').siblings().css('background-color', 'white')
+}, function() {
+    $('.chancesize ul li').css('background-color', 'white')
+})
+$('.shuliangchance ul li').click(function() {
+    //     $(this).css({
+    //         'background-color':'black',
+    //         'color':'white'
+    //     }).siblings().css({'background-color':'white',
+    // 'color':'black'
+    // })
+    $('.shuliangchance').hide()
+    b = $(this).text() - 0
+    $('.chancenum').text(b)
 
-// })
-
-
-// // 点击优惠券之后 显示 对不起优惠券已经领完了
-
-// document.querySelector('.text').onclick = function() {
-
-//     layer.msg('对不起，优惠券已经领光', {
-//         icon: 2,
-//         time: 1500
-//     })
-// }
+})
 
 
 // 绝对定位回到顶部 

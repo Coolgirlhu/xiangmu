@@ -126,7 +126,7 @@ class List {
             // 默认页码
             this.currentPage = 1;
             // 使用锁
-            //  this.lock = false;
+            this.lock = false;
         }
         // 绑定事件的方法
     bindEve() {
@@ -135,7 +135,7 @@ class List {
         this.$('.sk_bd ul').addEventListener('click', this.checkLogin.bind(this));
         this.$('.sk_page .page_num').addEventListener('click', this.fenye)
             // 滚动条事件
-            //  window.addEventListener('scroll', this.lazyLoader)
+        window.addEventListener('scroll', this.lazyLoader)
     }
 
     // 获取数据
@@ -280,6 +280,7 @@ class List {
             if (this.ye < 1) { this.ye = 1 }
             this.$('.sk_bd ul').innerHTML = ''
             this.getData(this.ye);
+            this.lazyLoader()
         }
     }
     addCartGoods(gId, uId) {
@@ -328,32 +329,32 @@ class List {
         // 当前需要的高度===滚动条距离顶部的高度+ 可视区的高度
         // 需要获取新的数据     当前实际内容高度<滚动条距离顶部的高度+ 可视区的高度
 
-    //  lazyLoader = () => {
-    //          // 需要滚动条高度
-    //          let top = document.documentElement.scrollTop;
-    // console.log(top, 't');
-    //  可视区高度
-    //          let cliH = document.documentElement.clientHeight;
-    // console.log(cliH, 'c');
-    //  实际内容高度
-    //          let conH = this.$('.sk_container').offsetHeight;
-    // console.log(conH);
-    // 如果滚动条高度+可视区的高度> 实际内容高度时,就加载新数据
-    //          if (top + cliH > (conH + 450)) {
-    // 一瞬间就满足条件,会不停的触发数据加载,使用节流和防抖
-    // 如果是锁着的,就结束代码执行
-    //              if (this.lock) return;
-    //              this.lock = true;
-    // 指定时间开锁,才能进行下次数据清除
-    //              setTimeout(() => {
-    //                      this.lock = false;
-    //                  }, 1000)
-    //                  // console.log(1111);
-    //  传递当千页码数
-    //              this.getData(++this.currentPage)
-    //          }
-    //      }
-    // 封装获取节点的方法
+    lazyLoader = () => {
+            // 需要滚动条高度
+            let top = document.documentElement.scrollTop;
+            console.log(top, 't');
+            //  可视区高度
+            let cliH = document.documentElement.clientHeight;
+            console.log(cliH, 'c');
+            //  实际内容高度
+            let conH = this.$('.sk_container').offsetHeight;
+            console.log(conH);
+            // 如果滚动条高度+可视区的高度> 实际内容高度时,就加载新数据
+            if (top + cliH > (conH + 450)) {
+                // 一瞬间就满足条件,会不停的触发数据加载,使用节流和防抖
+                // 如果是锁着的,就结束代码执行
+                if (this.lock) return;
+                //              this.lock = true;
+                // 指定时间开锁,才能进行下次数据清除
+                setTimeout(() => {
+                        this.lock = false;
+                    }, 1000)
+                    //                  // console.log(1111);
+                    //  传递当千页码数
+                this.getData(++this.currentPage)
+            }
+        }
+        // 封装获取节点的方法
     $(ele) {
         let res = document.querySelectorAll(ele);
         // 如果获取到的是,当个节点集合,就返回单个节点,如果是多个节点集合,就返回整个集合.
@@ -387,4 +388,125 @@ gettop.onclick = function() {
         // 给top值设置给文档
         document.documentElement.scrollTop = top
     }, 10)
+}
+
+
+// 左侧季节节点获取
+var jijie = document.querySelector('.jijie')
+var downarrow = document.querySelector('.jijie .downarrow')
+var uparrow = document.querySelector('.jijie .uparrow')
+downarrow.onclick = function() {
+    jijie.style.height = '220px'
+    downarrow.style.display = 'none'
+    uparrow.style.display = 'block'
+}
+uparrow.onclick = function() {
+        jijie.style.height = '75px'
+        downarrow.style.display = 'block'
+        uparrow.style.display = 'none'
+    }
+    // 年份获取
+var nianfen = document.querySelector('.nianfen')
+var downarrow1 = document.querySelector('.nianfen .downarrow1')
+var uparrow1 = document.querySelector('.nianfen .uparrow1')
+downarrow1.onclick = function() {
+    nianfen.style.height = '220px'
+    downarrow1.style.display = 'none'
+    uparrow1.style.display = 'block'
+}
+uparrow1.onclick = function() {
+        nianfen.style.height = '75px'
+        downarrow1.style.display = 'block'
+        uparrow1.style.display = 'none'
+    }
+    // 鞋类获取
+var xilie = document.querySelector('.xilie')
+var downarrow2 = document.querySelector('.xilie .downarrow2')
+var uparrow2 = document.querySelector('.xilie .uparrow2')
+downarrow2.onclick = function() {
+    xilie.style.height = '220px'
+    downarrow2.style.display = 'none'
+    uparrow2.style.display = 'block'
+}
+uparrow2.onclick = function() {
+    xilie.style.height = '75px'
+    downarrow2.style.display = 'block'
+    uparrow2.style.display = 'none'
+}
+
+// 鞋码点击 显示和隐藏
+$('.downarrow0').click(function() {
+    $('.xiematiao').show()
+    $('.downarrow0').hide()
+    $('.uparrow0').show()
+})
+$('.uparrow0').click(function() {
+        $('.xiematiao').hide()
+        $('.downarrow0').show()
+        $('.uparrow0').hide()
+    })
+    // 右上角购物车
+let gouwuche = document.querySelector('.dropDowncart .dropBtncart')
+    // console.log(gouwuche);
+gouwuche.onclick = function() {
+    let id = localStorage.getItem('user_id')
+    let token = localStorage.getItem('token')
+        // console.log(id);
+    const AUTH_TOKEN = localStorage.getItem('token')
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    // 发送服务器请求 查看用户信息
+    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+        // console.log(res);
+        // console.log(res.data.code);
+        if (res.data.code == 1) {
+            location.assign('./cart.html')
+        } else {
+            location.assign('./login.html')
+        }
+    })
+
+}
+
+//右侧跳转的购物车s
+let gwc = document.querySelector('.fixed .icon-gouwucheman1')
+    // console.log(gwc);
+let gwcwz = document.querySelector('.fixed .gwc')
+console.log(gwcwz);
+gwc.onclick = function() {
+    let id = localStorage.getItem('user_id')
+    let token = localStorage.getItem('token')
+        // console.log(id);
+    const AUTH_TOKEN = localStorage.getItem('token')
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    // 发送服务器请求 查看用户信息
+    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+        // console.log(res);
+        // console.log(res.data.code);
+        if (res.data.code == 1) {
+            location.assign('./cart.html')
+        } else {
+            location.assign('./login.html')
+        }
+    })
+
+}
+gwcwz.onclick = function() {
+    let id = localStorage.getItem('user_id')
+    let token = localStorage.getItem('token')
+    console.log(id);
+    const AUTH_TOKEN = localStorage.getItem('token')
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    // 发送服务器请求 查看用户信息
+    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+        // console.log(res);
+        // console.log(res.data.code);
+        if (res.data.code == 1) {
+            location.assign('./cart.html')
+        } else {
+            location.assign('./login.html')
+        }
+    })
 }

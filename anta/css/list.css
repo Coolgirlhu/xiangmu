@@ -257,6 +257,134 @@ a {
 
 /* 中间的 左边部分  */
 
+.leftlist {
+    /* height: 90px; */
+    width: 250px;
+    float: left;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.leftlist:hover {
+    cursor: pointer;
+}
+
+.mainlist::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.shaixuan {
+    width: 100%;
+    height: 90px;
+    /* line-height: 90px; */
+    border-bottom: 1px solid gray;
+}
+
+.fl {
+    float: left;
+}
+
+.shaixuan p {
+    width: 50px;
+    float: left;
+    line-height: 90px;
+}
+
+.chongzhi {
+    /* font-size: 30px; */
+    float: right;
+    width: 70px;
+    height: 38px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 16px;
+    /* margin-left: 150px;
+    margin-left: 140px; */
+    margin-top: 26px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.chongzhi:hover {
+    cursor: pointer;
+}
+
+.fenlei {
+    /* height: ;wid
+     */
+    width: 100%;
+    height: 132px;
+    border-bottom: 1px solid gray;
+}
+
+.xienumber {
+    width: 100%;
+    height: 76px;
+    /* overflow: auto; */
+    /* border-bottom: 1px solid gray; */
+}
+
+.xiematiao div:hover {
+    color: red;
+}
+
+.xiematiao {
+    width: 100%;
+    height: 237px;
+    overflow: auto;
+}
+
+.xiematiao div {
+    font-size: 14px;
+}
+
+.henggang {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid gray;
+}
+
+.jijie:before {
+    content: '';
+    display: table;
+}
+
+.jijie {
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+}
+
+.jijie div:hover {
+    color: red;
+}
+
+.nianfen {
+    width: 100%;
+    height: 75px;
+    border-top: 1px solid gray;
+    overflow: hidden;
+}
+
+.nianfen div:hover {
+    color: red;
+}
+
+.xilie {
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    border-top: 1px solid gray;
+}
+
+.xilie div:hover {
+    color: red;
+    overflow: hidden;
+}
+
 
 /* 渲染数据吧 */
 
@@ -277,7 +405,7 @@ a {
 }  */
 
 .sk_bd {
-    width: 1200px;
+    width: 1100px;
     margin-top: 25px;
     background-color: #fff;
     overflow: hidden;

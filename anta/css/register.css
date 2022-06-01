@@ -1,92 +1,158 @@
-body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,td,fieldset,legend{margin:0; padding:0;}
-ul,li,ol{list-style:none;}
-img,fieldset,iframe{border:0; }
-img{display:block; border:none;}
-a{text-decoration:none; color:#333;}
-h1,h2,h3,h4,h5,h6{font-weight:100;}
-body{font-size:12px; font-family:"微软雅黑";}
-input,a{outline:none;}
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+td,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
 
- .top{
-     width: 99.9%;
-     height: 50px;
-     border: 1px solid #DBDCDD;
- }
- .top>div{
-float: right;
-/* margin-right: 30px; */
-line-height: 50px;
-/* font: size 20px; */
-font-size: 14px;
-color: #A5A5A5;
-font-weight: bold;
+ul,
+li,
+ol {
+    list-style: none;
+}
 
- }
-.kefu{
+img,
+fieldset,
+iframe {
+    border: 0;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+.top {
+    width: 99.9%;
+    height: 50px;
+    border: 1px solid #DBDCDD;
+}
+
+.top>div {
+    float: right;
+    /* margin-right: 30px; */
+    line-height: 50px;
+    /* font: size 20px; */
+    font-size: 14px;
+    color: #A5A5A5;
+    font-weight: bold;
+}
+
+.kefu {
     margin-right: 35px;
 }
-.login{
+
+.login {
     margin-right: 35px;
 }
-.car{
+
+.car {
     margin-right: 35px;
 }
- .enban{
-     margin-right: 70px;
- }
 
- a{
-     text-decoration: none;
+.enban {
+    margin-right: 70px;
+}
 
- }
- .nov{
-     width: 100%;
-     /* height: 100px; */
+a {
+    text-decoration: none;
+}
 
- }
- .clearfix::after{
-     content: '';
-     display: block;
-     clear: both;
- }
- .logo{
-width: 55px;
-height: 30px;
-float: left;
-margin-left: 12.2%;
-margin-top: 34px;
- }
- .logo img {
+.nov {
+    width: 100%;
+    /* height: 100px; */
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
     width: 55px;
     height: 30px;
-     /* float: left; */
-    
+    float: left;
+    margin-left: 12.2%;
+    margin-top: 34px;
+}
 
- }
- .nov li{
-     float: left;
-     line-height: 100px;
+.logo img {
+    width: 55px;
+    height: 30px;
+    /* float: left; */
+}
 
- }
- /* ul{
+.nov li {
+    float: left;
+    line-height: 100px;
+}
+
+
+/* ul{
      width: ;
  } */
- ul li{
-     font-size: 17px;
-     font-weight: 900;
- }
- ul li:hover{
-     cursor: pointer;
-     /* padding-bottom: 10px; */
-     /* border-bottom: 10px solid red; */
- }
- ul li:first-child{
-margin-left: 236px;
- }
- .li1{
-     margin-left: 42px;
- }
-.nov .search{
+
+ul li {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+ul li:hover {
+    cursor: pointer;
+    /* padding-bottom: 10px; */
+    /* border-bottom: 10px solid red; */
+}
+
+ul li:first-child {
+    margin-left: 236px;
+}
+
+.li1 {
+    margin-left: 42px;
+}
+
+.nov .search {
     float: left;
     width: 212px;
     height: 40px;
@@ -96,37 +162,40 @@ margin-left: 236px;
     margin-left: 40px;
 }
 
-.enlarge{
-
+.enlarge {
     float: left;
     /* margin-top: 13px;
     margin-left: 13px; */
     width: 45px;
     height: 27px;
-    margin-top:7px ;
+    margin-top: 7px;
     text-align: center;
     line-height: 27px;
-border-right: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.search input{
+.search input {
     float: left;
     width: 140px;
     margin-left: 6px;
-    margin-top:10px ;
+    margin-top: 10px;
     border: none;
 }
 
+
 /* 以上是一样的顶部分重复csssssssssssssssssssssssssssssssssssssssssssss */
-.banner{
+
+.banner {
     width: 100%;
     /* min-height: 100%; */
     height: 600px;
-    background: url(https://img.fishfay.com/theme/images/antacn/login/login-01.jpg) no-repeat;background-size: 100% 920px;
+    background: url(https://img.fishfay.com/theme/images/antacn/login/login-01.jpg) no-repeat;
+    background-size: 100% 920px;
     position: relative;
     /* overflow: hidden; */
 }
-.zhuce{
+
+.zhuce {
     width: 500px;
     height: 500px;
     background-color: white;
@@ -134,7 +203,8 @@ border-right: 1px solid black;
     right: 100px;
     bottom: 50px;
 }
-.zctop{
+
+.zctop {
     display: flex;
     width: 376px;
     height: 35px;
@@ -147,28 +217,34 @@ border-right: 1px solid black;
     color: black;
     /* font-size: 20px; */
 }
+
+
 /* .zhuce table tr td:first-child{
     text-align: left;
 } */
-.zctop div{
+
+.zctop div {
     width: 188px;
     height: 35px;
     font-size: 15px;
 }
-.zctop div:hover{
+
+.zctop div:hover {
     cursor: pointer;
 }
-.zctop div:first-child{
+
+.zctop div:first-child {
     background-color: black;
     color: white;
 }
-.zhuce table{
+
+.zhuce table {
     margin: 20px auto 20px auto;
     /* font-size: 18px; */
     font-weight: bold;
-
 }
-td input{
+
+td input {
     width: 357px;
     height: 35px;
     border: 1px solid #B2B2B2;
@@ -177,104 +253,114 @@ td input{
     margin-top: 10px;
 }
 
-
-table{
+table {
     /* color: ; */
     color: #666666;
-
 }
 
-table td{
-    
+table td {
     height: 35px;
-
 }
-.danxuan{
+
+.danxuan {
     margin-left: 60px;
 }
-.danxuan input{
+
+.danxuan input {
     float: left;
     width: 14px;
     height: 14px;
 }
 
-.queren{
+.queren {
     width: 357px;
     height: 45px;
-background-color: black;
-margin: 0 auto;
-margin-top: 60px;
-text-align: center;
-line-height: 45px;
-/* color: white; */
-color: white;
-font-size: 20px;
-font-weight: bold;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 45px;
+    /* color: white; */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.queren:hover {
+    cursor: pointer;
 }
 
 
-
 /* 以下是 重复的底部部分csssssssssssssssssssssssssssssss */
-.bottom{
+
+.bottom {
     width: 100%;
     height: 266px;
     background-color: #292929;
 }
 
-.bottom>div{
+.bottom>div {
     float: left;
 }
-.keepmove{
-width: 566px;
-height: 266px;
-/* background-image: url(	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg); */
+
+.keepmove {
+    width: 566px;
+    height: 266px;
+    /* background-image: url(	https://img.fishfay.com/theme/images/logo/slogan-anta-r.svg); */
 }
-.keepmove img{
+
+.keepmove img {
     width: 250px;
     height: 96px;
     margin-left: 186px;
     margin-top: 87px;
 }
-.bottomr{
+
+.bottomr {
     width: 663px;
     height: 266px;
-
 }
-.righttop{
+
+.righttop {
     width: 663px;
     height: 106px;
     margin-top: 47px;
 }
-.righttop>div{
+
+.righttop>div {
     float: left;
 }
-.rtl{
+
+.rtl {
     width: 424px;
     height: 106px;
     border-right: 1px solid rgb(236, 225, 225);
     color: white;
     font-size: 22px;
 }
-.rtl>div span:last-child{
+
+.rtl>div span:last-child {
     margin-left: 20px;
 }
-.rtl>div{
+
+.rtl>div {
     margin-left: 60px;
 }
-.rtr{
+
+.rtr {
     width: 93px;
     height: 88px;
-
-    background-image: url(	https://img.fishfay.com/theme/images/antacn/qr-code.jpg);
+    background-image: url(https://img.fishfay.com/theme/images/antacn/qr-code.jpg);
     background-repeat: no-repeat;
     background-size: 93px 88px;
     margin-left: 90px;
     margin-top: 7px;
 }
-.rightbottom{
+
+.rightbottom {
     margin-top: 40px;
     width: 663px;
     /* height:160px ; */
-color: white;
-font-size: 14px;
+    color: white;
+    font-size: 14px;
 }

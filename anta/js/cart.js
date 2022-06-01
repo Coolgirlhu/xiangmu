@@ -223,6 +223,7 @@ class Cart {
         // console.log(this);
         // 点击全选的时候,应该让单个商品的选中框状态,跟随全选
         // console.log(eve.target);
+
         let allStatus = eve.target.checked;
         // console.log(allStatus);
         this.oneCheckGoods(allStatus);
@@ -235,19 +236,46 @@ class Cart {
     oneCheckGoods(status) {
 
             // console.log(this.$('.good-checkbox'));
-            this.$('.good-checkbox').forEach(input => {
-                input.checked = status;
-            })
-
+            if (Array.from(this.$('.good-checkbox')).length > 1) {
+                this.$('.good-checkbox').forEach(input => {
+                    input.checked = status;
+                })
+            } else {
+                this.$('.good-checkbox').checked = status;
+            }
         }
         //  实现单选
     oneGoodsCheckBox() {
             // console.log(this.$('.good-checkbox'));
             // 给每个单选按钮绑定点击事件
-            this.$('.good-checkbox').forEach(input => {
-                /// 保存this的指向
+            // 便利给每个单选按钮绑定点击事件   当有很多个商品时  集合长度判断
+            if (Array.from(this.$('.good-checkbox')).length > 1) {
+
+                this.$('.good-checkbox').forEach(input => {
+                    /// 保存this的指向
+                    let self = this;
+                    input.onclick = function() {
+                        // 获取当前的点击状态
+                        // console.log(this.checked);
+                        // 判断当前商品的input点击的是取消,则此时取消全选
+                        if (!this.checked) {
+                            self.$('.cart-th input').checked = false;
+                        }
+                        // 点击选中时,则判断页面中是否有其它的未选中,如果都选中,则全选选中
+                        if (this.checked) {
+                            let status = self.getOneGoodsStatus();
+                            // console.log(status);
+                            self.$('.cart-th input').checked = status;
+                        }
+
+                        // 统计价格和数据
+                        self.countSumPrice();
+                    }
+                })
+            } else {
+                // 单个商品时
                 let self = this;
-                input.onclick = function() {
+                this.$('.good-checkbox').onclick = function() {
                     // 获取当前的点击状态
                     // console.log(this.checked);
                     // 判断当前商品的input点击的是取消,则此时取消全选
@@ -264,7 +292,7 @@ class Cart {
                     // 统计价格和数据
                     self.countSumPrice();
                 }
-            })
+            }
         }
         // 实现单个商品选中状态
     getOneGoodsStatus() {
@@ -286,11 +314,26 @@ class Cart {
         let sum = 0;
         let num = 0;
         // 只统计选中商品的
-        this.$('.good-checkbox').forEach(input => {
-            // console.log(input);
-            if (input.checked) {
+        if (Array.from(this.$('.good-checkbox')).length > 1) {
+            this.$('.good-checkbox').forEach(input => {
+                // console.log(input);
+                if (input.checked) {
+                    // 通过input:checkbox 找到ul
+                    let ul = input.parentNode.parentNode;
+                    // console.log(ul);
+
+                    // 获取数量和小计  字符串转化数字类型
+                    let tmpNum = ul.querySelector('.itxt').value - 0;
+                    let tmpSum = ul.querySelector('.sum').innerHTML - 0;
+                    // console.log(tmpNum, tmpSum);
+                    sum += tmpSum;
+                    num += tmpNum;
+                }
+            });
+        } else {
+            if (this.$('.good-checkbox').checked) {
                 // 通过input:checkbox 找到ul
-                let ul = input.parentNode.parentNode;
+                let ul = this.$('.good-checkbox').parentNode.parentNode;
                 // console.log(ul);
 
                 // 获取数量和小计  字符串转化数字类型
@@ -300,12 +343,10 @@ class Cart {
                 sum += tmpSum;
                 num += tmpNum;
             }
-
-
-        });
+        }
         // 保留小数点后两位
         sum = parseInt(sum * 100) / 100
-            // console.log(sum, num);
+        console.log(sum, num);
 
         // 将数量和价格放到页面中
         this.$('.sumprice-top strong').innerHTML = num;

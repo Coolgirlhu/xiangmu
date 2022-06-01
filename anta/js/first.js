@@ -217,3 +217,86 @@ arr5.forEach(function(i) {
     str5 += ` <a href="">  <li>${i}</li></a>`
 })
 caidanc.children[4].innerHTML = str5
+
+// 四位明星介绍
+$('.fourc>div').hover(function() {
+        $(this).children().eq(1).stop().fadeTo(1, '1')
+            // 鼠标悬停介绍显示
+        $(this).children().eq(1).show(10, 'linear')
+            // 运动 0.5秒匀速执行
+        $(this).children().eq(1).animate({ 'bottom': '0px' }, 500, 'linear')
+
+    }, function() {
+
+        $(this).children().eq(1).stop().fadeTo(20, '0.7')
+            // 运动 匀速执行
+        $(this).children().eq(1).animate({ 'bottom': '-50px' }, 200, 'linear')
+            // 让介绍隐藏
+        $(this).children().eq(1).hide(1)
+    })
+    // 获取购物车节点
+let gouwuche = document.querySelector('.dropDowncart .dropBtncart')
+    // console.log(gouwuche);
+gouwuche.onclick = function() {
+    let id = localStorage.getItem('user_id')
+    let token = localStorage.getItem('token')
+        // console.log(id);
+    const AUTH_TOKEN = localStorage.getItem('token')
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    // 发送服务器请求 查看用户信息
+    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+        // console.log(res);
+        // console.log(res.data.code);
+        if (res.data.code == 1) {
+            location.assign('./cart.html')
+        } else {
+            location.assign('./login.html')
+        }
+    })
+
+}
+
+
+//右侧跳转的购物车s
+let gwc = document.querySelector('.fixed .icon-gouwucheman1')
+    // console.log(gwc);
+let gwcwz = document.querySelector('.fixed .gwc')
+console.log(gwcwz);
+gwc.onclick = function() {
+    let id = localStorage.getItem('user_id')
+    let token = localStorage.getItem('token')
+        // console.log(id);
+    const AUTH_TOKEN = localStorage.getItem('token')
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    // 发送服务器请求 查看用户信息
+    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+        // console.log(res);
+        // console.log(res.data.code);
+        if (res.data.code == 1) {
+            location.assign('./cart.html')
+        } else {
+            location.assign('./login.html')
+        }
+    })
+
+}
+gwcwz.onclick = function() {
+    let id = localStorage.getItem('user_id')
+    let token = localStorage.getItem('token')
+    console.log(id);
+    const AUTH_TOKEN = localStorage.getItem('token')
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+    axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    // 发送服务器请求 查看用户信息
+    axios.get("http://localhost:8888/users/info/" + `${id}`).then(res => {
+        // console.log(res);
+        // console.log(res.data.code);
+        if (res.data.code == 1) {
+            location.assign('./cart.html')
+        } else {
+            location.assign('./login.html')
+        }
+    })
+}
